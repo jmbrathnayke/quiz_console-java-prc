@@ -1,19 +1,16 @@
 public class Question {
-   private int id;
-   private String questions;
-   private String opt1;
-   private String opt2;
-   private String opt3;
-   private String opt4;
-   private String answer;
+    private int id;
+    private String question;
+    private String opt1;
+    private String opt2;
+    private String opt3;
+    private String opt4;
+    private String answer;
 
-    //default constructor
-    public Question() {
-    }
-    //parameterized constructor
-    public Question(int id, String questions, String opt1, String opt2, String opt3, String opt4, String answer) {
+
+    public Question(int id, String question, String opt1, String opt2, String opt3, String opt4, String answer) {
         this.id = id;
-        this.questions = questions;
+        this.question = question;
         this.opt1 = opt1;
         this.opt2 = opt2;
         this.opt3 = opt3;
@@ -21,7 +18,6 @@ public class Question {
         this.answer = answer;
     }
 
-    //getters and setters for acess
     public int getId() {
         return id;
     }
@@ -30,12 +26,12 @@ public class Question {
         this.id = id;
     }
 
-    public String getQuestions() {
-        return questions;
+    public String getQuestion() {
+        return question;
     }
 
-    public void setQuestions(String questions) {
-        this.questions = questions;
+    public void setQuestion(String question) {
+        this.question = question;
     }
 
     public String getOpt1() {
@@ -78,12 +74,12 @@ public class Question {
         this.answer = answer;
     }
 
+
     @Override
-    //data in aprticular format
     public String toString() {
         return "Question{" +
                 "id=" + id +
-                ", questions='" + questions + '\'' +
+                ", question='" + question + '\'' +
                 ", opt1='" + opt1 + '\'' +
                 ", opt2='" + opt2 + '\'' +
                 ", opt3='" + opt3 + '\'' +
